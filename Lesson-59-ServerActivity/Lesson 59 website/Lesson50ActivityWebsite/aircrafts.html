@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flightradar25 - Aircrafts</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Load components.js before aircrafts.js -->
+  <script src="components.js"></script>
+  <script src="aircrafts.js"></script>
+</head>
+<body class="aircrafts-page" onload="init()">
+  <div id="header"><h1>Aircraft Directory</h1></div>
+
+  <nav id="nav">
+    <a href="index.html" class="button">Home</a>
+    <a href="airlines.html" class="button">Airlines</a>
+    <a href="aircrafts.html" class="button">Aircrafts</a>
+    <a href="airports.html" class="button">Airports</a>
+    <a href="flights.html" class="button">Flights</a>
+  </nav>
+
+  <div class="container">
+    <div class="sidebar">
+      <h3>Popular Families</h3>
+      <ul>
+        <li>Boeing 737</li>
+        <li>Airbus A320</li>
+        <li>Boeing 777</li>
+        <li>Airbus A350</li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <h2>Explore Aircraft Types</h2>
+      <div id="output" class="aircraft-grid"></div>
+    </div>
+  </div>
+
+  <div id="foot"><h3>*Data from Flightradar24, FlightAware, and Google Flights*</h3></div>
+</body>
+</html>
